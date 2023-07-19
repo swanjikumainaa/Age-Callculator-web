@@ -1,4 +1,4 @@
-###AGE CALCULATOR WEBSITE
+## AGE CALCULATOR WEBSITE
 
 
 Created an age calculator website using HTML, CSS and JavaScript.The app allows users to:

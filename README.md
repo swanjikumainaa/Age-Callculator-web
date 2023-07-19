@@ -1,7 +1,7 @@
 ## AGE CALCULATOR WEBSITE
 
 
-Created an age calculator website using HTML, CSS and JavaScript.The app allows users to:
+I Created an age calculator website using HTML, CSS and JavaScript.The app allows users to:
 
 
 - View an age in years, months, and days after submitting a valid date through the form

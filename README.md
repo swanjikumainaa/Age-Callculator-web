@@ -16,7 +16,7 @@ I Created an age calculator website using HTML, CSS and JavaScript.The app allow
 - See the age numbers animate to their final number when the form is submitted
 
 
-The website is hosted on Netlify:[Hosted Link](wanjikode-age-calculator.netlify.app)
+The website is hosted on Netlify:[Hosted Link](https://wanjikode-age-calculator.netlify.app/)
  
 
 

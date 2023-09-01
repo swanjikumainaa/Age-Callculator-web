@@ -10,7 +10,7 @@ body {
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
   height: 100vh; /*full viewport height for vertical centering */
 }
 
@@ -93,4 +93,10 @@ button:hover {
 
 .result span.days {
   color: #5733ff; /* Color for the days */
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container {
+    flex-direction: column;
+  }
 }

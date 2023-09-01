@@ -1,95 +1,102 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .container {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top:300px;
-  }
-  
-  form {
-    display: flex;
-   flex-direction: row;
-    margin-bottom: 20px;
-    gap: 30px;
-
-  }
-  
-  .year{
-    display: flex;
-    flex-direction: column;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
 }
 
-.month{
-    display: flex;
-    flex-direction: column;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  margin: auto;
+  height: 100vh; /*full viewport height for vertical centering */
 }
-.day{
-    display: flex;
-    flex-direction: column;
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+.form-container {
+  display: flex;
 }
 
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input {
-    padding: 5px;
-  }
-  
-  button {
-    padding: 10px 2px;
-    background-color: #3bbfc9;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius:12px;
-    width: 100px;
-    margin-left: 150px;
-    margin-top:30px;
+.year {
+  display: flex;
+  flex-direction: column;
+}
 
-  }
-  
-  button:hover {
-    background-color: #1545ca;
-  }
-  
- 
+.month {
+  display: flex;
+  flex-direction: column;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+}
 
-  
-  .animate {
-    animation: fadeIn 1s;
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 10px 2px;
+  background-color: #3bbfc9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 12px;
+  width: 100px;
+  /* margin-left: 150px; */
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #1545ca;
+}
+
+.animate {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .result {
-    font-size: 20px;
-    color: #333; /* Default color for the result */
+}
+
+.result {
+  font-size: 20px;
+  color: #333; /* Default color for the result */
+}
+
+.result span.years {
+  color: #ff5733; /* Color for the years */
+}
+
+.result span.months {
+  color: #33ff57; /* Color for the months */
+}
+
+.result span.days {
+  color: #5733ff; /* Color for the days */
+}
+
+@media only screen and (max-width: 500px) {
+  .form-container {
+    flex-direction: column;
   }
-  
-  .result span.years {
-    color: #FF5733; /* Color for the years */
-  }
-  
-  .result span.months {
-    color: #33FF57; /* Color for the months */
-  }
-  
-  .result span.days {
-    color: #5733FF; /* Color for the days */
-  }
+}
